@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+<body>
+    <div class="timeline1">
+        <header>
+            <h1>Comentarios</h1>
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+        </nav></div>
+        <main>
+            <section>
+                <h2>Deja tu Comentario</h2>
+                <form action="procesar_comentario.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <h2><i>Comentarios Recientes</i></h2><br>
+                <div class="comentario">
+                    <p><strong>Juan Pérez</strong>: Excelente practica Rodrigo, me encantó la información.</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Pancho Herrera</strong>: Muy útil para planificar mi viaje a Cordoba. ¡Gracias!</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Antonieta</strong>:Me sirvio mucho para encontrar lugares para visitar en Cordoba!!</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Vicenta Sanchez</strong>: Gracias por la informacion!</p>
+                </div>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy;Blog de Comentarios- De la Torre Ramirez Rodrigo Isai</p>
+        </footer>
+</html>

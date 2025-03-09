@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: mediumaquamarine;
+            margin: 0;
+            padding: 20px;
+            scroll-behavior: smooth; /* Agrega desplazamiento suave */
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        .timeline1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .evento {
+            border: 1px solid #000;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #ff5500;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            background: white;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            width: 100%; /* Ocupa todo el ancho */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            scroll-margin-top: 100px; /* Ajusta el desplazamiento para evitar que el encabezado quede oculto */
+        }
+    </style>
+</head>
+<body>
+    <h1>Historia de la Web</h1>
+    
+    <section>
+        <div class="timeline1">
+            <div class="evento">
+                <a href="#evento1"><strong>1946</strong></a>
+                <p>PRIMER ORDENADOR</p>
+            </div>
+            <div class="evento">
+                <a href="#evento2"><strong>1964</strong></a>
+                <p>MODELO BARAN</p>
+            </div>
+            <div class="evento">
+                <a href="#evento3"><strong>1968</strong></a>
+                <p>NPL</p>
+            </div>
+            <div class="evento">
+                <a href="#evento4"><strong>1969</strong></a>
+                <p>ARPANET</p>
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    
+    <section>
+        <div class="timeline">
+            <div class="timeline-item" id="evento1">
+                <h3>1946 - PRIMER ORDENADOR</h3>
+                <p>ALAN TURING (CREADOR) - DESARROLLADO PARA CALCULAR TRAYECTORIAS DE PROYECTILES EN LA SEGUNDA GUERRA MUNDIAL.</p>
+            </div>
+            <div class="timeline-item" id="evento2">
+                <h3>1964 - MODELO DE BARAN</h3>
+                <p>TECNOLOGÍA "CONMUTACIÓN DE PAQUETES" PARA OPTIMIZAR LA TRANSMISIÓN DE DATOS.</p>
+            </div>
+            <div class="timeline-item" id="evento3">
+                <h3>1968 - NPL (NATIONAL PHYSICS LABORATORY)</h3>
+                <p>INVESTIGACIÓN Y DESARROLLO DE NUEVAS TECNOLOGÍAS DE PRECISIÓN.</p>
+            </div>
+            <div class="timeline-item" id="evento4">
+                <h3>1969 - ARPANET</h3>
+                <p>PRECURSOR DE INTERNET, PRIMERA RED EN UTILIZAR LA CONMUTACIÓN DE PAQUETES.</p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <button onclick="location.href='PW.html'">Ver CV</button>
+    <button onclick="location.href='HOME.html'">Ir al Home</button>
+
+</body>
+</html>
