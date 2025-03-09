@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
+    <title>Mi Landing Page Profesional</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: grey;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
         }
         button {
-            padding: 10px 20px;
-            margin: 10px;
+            padding: 15px 30px;
+            margin: 20px;
             font-size: 16px;
             cursor: pointer;
-            color:white;
-            background-color: black;
-        }
-        .timeline1 {
-            display: block;
-            gap: 20px;
-            text-align: center;
-            border: 1px solid #000;
-            padding: 15px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
             border-radius: 5px;
-            background-color: #f4f4f4;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .timeline {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .timeline a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+        .timeline a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="timeline1">
-        <nav> 
-            <a href="HTML\cv.html">CV</a> 
-            <a href="HTML\hobbies.html">Hobbies</a> 
-            <a href="HTML\video.html">Video</a> 
-            <a href="HTML\intereses.html">Intereses Profesionales</a> 
-          </nav> 
-          </div>
+    <header>
+        <h1>Bienvenido a Mi Página Profesional</h1>
+        <h2>Descubre mi experiencia, intereses y proyectos a través de los siguientes enlaces</h2>
+    </header>
+    
+    <div class="section">
+        <h3><mark>Conoce más sobre mí:</mark></h3>
+        <p>Explora mi CV, hobbies, intereses profesionales y mi video de presentación para saber más acerca de mis habilidades y experiencias.</p>
+    </div>
+
+    <div class="timeline">
+        <a href="HTML\cv.html">CV</a> 
+        <a href="HTML\hobbies.html">Hobbies</a> 
+        <a href="HTML\video.html">Video</a> 
+        <a href="HTML\intereses.html">Intereses Profesionales</a> 
+    </div>
+
+    <div class="section">
+        <p><strong>¡Toma acción ahora!</strong> Para conocer más, selecciona una opción:</p>
+        <button onclick="location.href='HTML/CV.html'">Ver CV</button>
+        <button onclick="location.href='HTML/Hobbies.html'">Ver Hobbies</button>
+        <button onclick="location.href='HTML/Intereses.html'">Ver Intereses</button>
+        <button onclick="location.href='HTML/Video.html'">Ver Video</button>
+    </div>
 </body>
-<section>
-<hr>
-<h5><mark>accion</mark></h5>
-<p>Para conocer mas, selecciona una opción:</p>
-        <button onclick="location.href='HTML\CV.html'">Ver CV</button>
-        <button onclick="location.href='HTML\Hobbies.html'">Hobbies</button>
-        <button onclick="location.href='HTML\Intereses.html'">INTERESES</button>
-        <button onclick="location.href='HTML\Video.html'">VIDEO</button>
-    </section>
-
-
 </html>
