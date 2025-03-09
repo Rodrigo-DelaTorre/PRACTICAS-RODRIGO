@@ -16,6 +16,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            text-align: center;
         }
 
         nav {
@@ -42,12 +43,19 @@
             background-color: rgb(255, 255, 255);
             color: black;
         }
+        .nombre {
+            font-family: "Times New Roman", serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
 
         .image-container {
             width: 90%;
             max-width: 550px;
             height: auto;
-            margin-top: 50px;
+            margin-top: 30px;
             border-radius: 50%;
             overflow: hidden;
             border: 5px solid orange;
@@ -59,10 +67,14 @@
             height: 100%;
             object-fit: cover;
         }
+
         @media (max-width: 768px) {
             nav a {
                 font-size: 16px;
                 padding: 8px 12px;
+            }
+            .nombre {
+                font-size: 28px;
             }
             .image-container {
                 max-width: 300px;
@@ -73,6 +85,9 @@
             nav {
                 flex-direction: column;
                 align-items: center;
+            }
+            .nombre {
+                font-size: 24px;
             }
             .image-container {
                 max-width: 250px;
@@ -88,6 +103,9 @@
         <a href="Practica 2.3/HOME.html">PRACTICA 2.3</a>
         <a href="Practica 2.4/HTML/home.html">PRACTICA 2.4</a>
     </nav>
+
+    <div class="nombre">DE LA TORRE RAMIREZ RODRIGO ISAI</div>
+
     <div class="image-container">
         <img src="yo.jpg" alt="Imagen Redonda">
     </div>
